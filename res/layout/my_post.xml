@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/person_center_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg_red"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <ImageView
+            android:id="@+id/personal_post_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/head_back_red" />
+
+        <LinearLayout
+            android:id="@+id/personal_post_head_type_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/personal_post_head_chat"
+                style="@style/main_head_menu_title"
+                android:background="@drawable/mypost_head_left"
+                android:enabled="false"
+                android:text="@string/post_type_chat" />
+
+            <Button
+                android:id="@+id/personal_post_head_diary"
+                style="@style/main_head_menu_title"
+                android:background="@drawable/mypost_head_center"
+                android:text="@string/post_type_diary" />
+
+            <Button
+                android:id="@+id/personal_post_head_moment"
+                style="@style/main_head_menu_title"
+                android:background="@drawable/mypost_head_center"
+                android:text="@string/post_type_moment" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <com.starbaby.diyBook.clientwidget.PullToRefreshListView
+            android:id="@+id/personal_post_chat_listview"
+            style="@style/widget_listview" />
+
+        <com.starbaby.diyBook.clientwidget.PullToRefreshListView
+            android:id="@+id/personal_post_diary_listview"
+            style="@style/widget_listview"
+            android:visibility="gone" />
+
+        <com.starbaby.diyBook.clientwidget.PullToRefreshListView
+            android:id="@+id/personal_post_moment_listview"
+            style="@style/widget_listview"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

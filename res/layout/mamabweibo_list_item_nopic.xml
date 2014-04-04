@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/message_detail_userface" android:background="@drawable/face_loading" android:focusable="false" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:ellipsize="end" android:gravity="center" android:id="@+id/message_detail_username" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip"  android:singleLine="true" android:layout_below="@id/message_detail_userface" />
+    <RelativeLayout android:id="@+id/user_content" android:background="@drawable/content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/message_detail_userface">
+        <LinearLayout android:orientation="vertical"   android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"  >
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff252525" android:autoLink="web" android:id="@+id/message_detail_content" android:background="@drawable/sns_clickable_bg" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+	<!--      <GridView android:id="@+id/gridview"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5.0dip" 
+		    android:layout_marginTop="5dip"
+		    android:numColumns="3"
+		    android:verticalSpacing="5dip"
+		    android:horizontalSpacing="5dip"
+		    android:columnWidth="73.0dip" 
+		    android:stretchMode="columnWidth"
+		    android:gravity="center"
+		    android:visibility="gone"
+		     /> -->
+         <LinearLayout android:orientation="vertical" android:id="@+id/message_detail_images_keeper_li"  android:layout_marginLeft="5.0dip"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" >
+                
+         </LinearLayout>
+    <!--         <ImageView 
+	    	android:id="@+id/message_detail_image"
+	      	android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/message_detail_content"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/school_default"
+	        /> -->
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/layout_time" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/message_datail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_10"
+                />
+	       	<TextView android:id="@+id/message_detail_view_count"  
+	       		android:layout_alignParentRight="true"
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	            android:layout_marginLeft="3dip"
+	            android:layout_marginRight="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	           	android:drawablePadding="3dip"
+	           	android:drawableLeft="@drawable/widget_message_view_icon"
+	            android:textColor="@color/listitem_gray"/>
+	       	
+ 			 <TextView android:id="@+id/message_detail_message_count"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		     		android:layout_toLeftOf="@id/message_detail_view_count"
+		       	    android:layout_marginRight="10dip"
+		       	    android:drawableLeft="@drawable/widget_message_count_icon"
+		       	    android:drawablePadding="3dip"
+		       	    android:textSize="@dimen/text_size_10"
+		            android:textColor="@color/listitem_gray"/>  
+	      </RelativeLayout>
+	     </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relative_comment_pic1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/user_content">
+        <ImageView android:id="@+id/comment_pic1" android:background="@drawable/comment_bg1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    </RelativeLayout>
+</RelativeLayout>

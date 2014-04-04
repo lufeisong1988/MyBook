@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/operate_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小提示"
+        android:textSize="20sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/operate_bnt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vist_first"
+            android:soundEffectsEnabled="false" >
+        </Button>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="10dp" >
+        </View>
+
+        <Button
+            android:id="@+id/operate_bnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_next"
+            android:soundEffectsEnabled="false" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

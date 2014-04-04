@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="right" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/toolbar"
+        android:gravity="right" >
+
+        <LinearLayout
+            android:id="@+id/pop_inflate_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/SDbnt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonplay"
+                android:soundEffectsEnabled="false" />
+
+            <Button
+                android:id="@+id/SDbnt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_select3"
+                android:soundEffectsEnabled="false" />
+
+            <Button
+                android:id="@+id/SDbnt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_select4"
+                android:soundEffectsEnabled="false" />
+
+            <Button
+                android:id="@+id/SDbnt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_select5"
+                android:soundEffectsEnabled="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pop_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pop_return"
+            android:soundEffectsEnabled="false" >
+        </Button>
+
+        <Button
+            android:id="@+id/pop_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pop_inflate_parent"
+            android:layout_marginLeft="-40dp"
+            android:background="@drawable/button_select7"
+            android:soundEffectsEnabled="false" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_parent"
+        android:layout_width="45px"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/volumbackg" >
+
+        <com.starbaby.diyBook.view.mSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="45px"
+            android:layout_height="192dp"
+            android:layout_gravity="center_vertical"
+            android:progressDrawable="@drawable/volum"
+            android:soundEffectsEnabled="false" >
+        </com.starbaby.diyBook.view.mSeekBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/readMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_done"
+            android:soundEffectsEnabled="false"
+            android:text="阅读模式"
+            android:textColor="@android:color/white" >
+        </Button>
+
+        <Button
+            android:id="@+id/zuoShuMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_off"
+            android:soundEffectsEnabled="false"
+            android:text="做书模式"
+            android:textColor="#6495ED" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

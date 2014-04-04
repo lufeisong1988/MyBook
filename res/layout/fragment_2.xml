@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fragment_background"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/fragment_2_rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:id="@+id/fragment_2_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fragment_2_wifi" />
+
+            <TextView
+                android:id="@+id/fragemtn_2_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/fragment_2_iv1"
+                android:text="仅在wifi下下载书籍" >
+            </TextView>
+
+            <ToggleButton
+                android:id="@+id/fragment_2_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_toggle"
+                android:checked="true"
+                android:soundEffectsEnabled="false"
+                android:textOff=""
+                android:textOn="" >
+            </ToggleButton>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_2_rl2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:id="@+id/fragment_2_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fragemtn_2_volun" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/fragemtn_2_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/fragment_2_iv2"
+                android:text="声音" >
+            </TextView>
+
+            <ToggleButton
+                android:id="@+id/fragment_2_rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_toggle"
+                android:checked="true"
+                android:soundEffectsEnabled="false"
+                android:textOff=""
+                android:textOn="" >
+            </ToggleButton>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_2_rl3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_select6"
+            android:soundEffectsEnabled="false" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:soundEffectsEnabled="false" />
+
+            <ImageView
+                android:id="@+id/fragment_2_iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fragment_2_zone"
+                android:soundEffectsEnabled="false" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/fragemtn_2_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/fragment_2_iv3"
+                android:soundEffectsEnabled="false"
+                android:text="空间管理" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_2_rl4"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_select6"
+            android:soundEffectsEnabled="false" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:soundEffectsEnabled="false" />
+
+            <ImageView
+                android:id="@+id/fragment_2_iv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fragment_2_update"
+                android:soundEffectsEnabled="false" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/fragemtn_2_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/fragment_2_iv4"
+                android:soundEffectsEnabled="false"
+                android:text="版本管理" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/fragemtn_2_tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/fragemtn_2_tv4"
+                android:soundEffectsEnabled="false" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_2_rl6"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_select6"
+            android:soundEffectsEnabled="false" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:soundEffectsEnabled="false" />
+
+            <ImageView
+                android:id="@+id/fragment_2_iv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fragment_2_exit"
+                android:soundEffectsEnabled="false" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/fragemtn_2_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/fragment_2_iv6"
+                android:soundEffectsEnabled="false"
+                android:text="退出登入" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

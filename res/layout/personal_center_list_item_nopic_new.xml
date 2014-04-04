@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80.0dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/wode_icon_08" />
+
+        <ImageView
+            android:id="@+id/personal_center_post_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.0"
+            android:background="@drawable/wode_icon_08" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="6.0dip"
+        android:layout_marginTop="9.0dip"
+        android:background="@drawable/content_bg" >
+
+        <RelativeLayout
+            android:id="@+id/user_conent_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/personal_listitem_content_pic"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="4.5dip"
+                android:layout_marginTop="4.5dip"
+                android:background="@drawable/sns_media_link_bg"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/personal_listitem_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="4.0dip"
+                android:layout_toRightOf="@id/personal_listitem_content_pic"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3.0dip"
+                android:text="测试测试测试测试测试测试测试"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#ff252525" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_conent_top"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:id="@+id/personal_listitem_view_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="#ffbcbcbc"
+                android:textSize="@dimen/text_size_10" />
+
+            <TextView
+                android:id="@+id/personal_listitem_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/widget_message_view_icon"
+                android:drawablePadding="3dip"
+                android:textColor="#ffbcbcbc"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/personal_listitem_personal_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/personal_listitem_view_count"
+                android:drawableLeft="@drawable/widget_message_count_icon"
+                android:drawablePadding="3dip"
+                android:paddingRight="12.0dip"
+                android:textColor="#ffbcbcbc"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/personal_listitem_personal_post_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2.0dip"
+            android:src="@drawable/post_top"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

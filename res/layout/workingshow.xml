@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/workingshow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.starbaby.diyBook.view.EventLinearLayout
+            android:id="@+id/work_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/work_background" >
+
+            <com.starbaby.diyBook.view.PullToRefreshListView
+                android:id="@+id/work_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="60dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:scrollbars="none" >
+            </com.starbaby.diyBook.view.PullToRefreshListView>
+        </com.starbaby.diyBook.view.EventLinearLayout>
+
+        <ImageButton
+            android:id="@+id/comment_iBnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/comment" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/work_title" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/work_head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:soundEffectsEnabled="false" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/workshowing_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/message_tip"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:onClick="false"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/worK_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/showworking_title"
+                    android:soundEffectsEnabled="false" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/work_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/userinfo_book"
+                    android:soundEffectsEnabled="false" >
+                </ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/work_containers"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/workingshow_showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="加载数据中..."
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/mainactivity_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+            </ProgressBar>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

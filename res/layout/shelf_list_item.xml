@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parents"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/left_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/shelf_image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainbook_left"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/right_ll"
+        android:layout_toRightOf="@+id/left_ll" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainbook_center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/button_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#99887766"
+                        android:clickable="true"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+				
+                 <LinearLayout
+                    android:id="@+id/ll1_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                    android:id="@+id/button_1_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:soundEffectsEnabled="false" />
+                </LinearLayout>
+               
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/button_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#99887744"
+                        android:clickable="true"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/button_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#99887733"
+                        android:clickable="true"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/button_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#99887722"
+                        android:clickable="true"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/shelf_image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainbook_right"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+</RelativeLayout>

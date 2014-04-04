@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="486dp"
+        android:layout_height="230dp"
+        android:background="@drawable/fragment_1_show_background" >
+
+        <TextView
+            android:id="@+id/memory_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:text="提示信息"
+            android:textColor="#ff00bfff"
+            android:textSize="20sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/memory_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/memory_tv2"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:text="    手机存储空间不足，请及时清理文件，保障应用正常使用"
+            android:textColor="#ff00bfff"
+            android:textSize="18sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/memory_bnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/exit"
+            android:soundEffectsEnabled="false" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

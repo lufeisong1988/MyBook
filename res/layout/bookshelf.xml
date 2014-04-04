@@ -1,0 +1,405 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bookshelf_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.starbaby.diyBook.view.EventLinearLayout
+            android:id="@+id/book_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/more_background"
+            android:soundEffectsEnabled="false" >
+
+            <com.starbaby.diyBook.view.PullToRefreshListView
+                android:id="@+id/lv1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:scrollbars="none"
+                android:soundEffectsEnabled="false" />
+			  <ImageButton
+                android:id="@+id/comment_iBnt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/comment" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/title_background" >
+
+                <TextView
+                    android:id="@+id/bookshelf_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/returnMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/pull_down"
+                    android:soundEffectsEnabled="false" >
+                </Button>
+            </RelativeLayout>
+        </com.starbaby.diyBook.view.EventLinearLayout>
+
+        <Button
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/recommend"
+            android:ems="1"
+            android:soundEffectsEnabled="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" >
+        </Button>
+        <!-- 镜像 -->
+
+        <RelativeLayout
+            android:id="@+id/jingxiang"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/morebookbackground"
+            android:soundEffectsEnabled="false" >
+
+            <Button
+                android:id="@+id/back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pull_up"
+                android:soundEffectsEnabled="false" >
+            </Button>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/morebook_shape"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_1" />
+
+                        <Button
+                            android:id="@+id/bnt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="宝宝益智"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_2" />
+
+                        <Button
+                            android:id="@+id/bnt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="精品绘本"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_4" />
+
+                        <Button
+                            android:id="@+id/bnt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="早教特色"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_6" />
+
+                        <Button
+                            android:id="@+id/bnt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="宝宝成长"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_8" />
+
+                        <Button
+                            android:id="@+id/bnt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="胎教故事"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_5" />
+
+                        <Button
+                            android:id="@+id/bnt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="幼儿教案"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_3" />
+
+                        <Button
+                            android:id="@+id/bnt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="幼儿学习"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_10" />
+
+                        <Button
+                            android:id="@+id/bnt8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="儿童故事"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_7" />
+
+                        <Button
+                            android:id="@+id/bnt9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="品牌故事"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/title_9" />
+
+                        <Button
+                            android:id="@+id/bnt10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/more_button"
+                            android:gravity="center"
+                            android:soundEffectsEnabled="false"
+                            android:text="品质出版"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/containers"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bookshelf_showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_background"
+        android:soundEffectsEnabled="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="加载数据中..."
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/mainactivity_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+            </ProgressBar>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

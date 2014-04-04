@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/toolbar" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/zuoshu_menu_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/zuoshu_menu_bnt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_off"
+                android:soundEffectsEnabled="false"
+                android:text="看书模式" >
+            </Button>
+
+            <Button
+                android:id="@+id/zuoshu_menu_bnt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_done"
+                android:soundEffectsEnabled="false"
+                android:text="做书模式"
+                android:textColor="@android:color/white" >
+            </Button>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_marginTop="150dp" >
+
+            <Button
+                android:id="@+id/zuoshu_menu_addpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/takephoto"
+                android:soundEffectsEnabled="false" >
+            </Button>
+
+            <Button
+                android:id="@+id/zuoshu_menu_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zuoshu_menu_addpic"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/save"
+                android:soundEffectsEnabled="false"
+                android:text="保存" >
+            </Button>
+             <Button
+                android:id="@+id/zuoshu_menu_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zuoshu_menu_addpic"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/save"
+                android:soundEffectsEnabled="false"
+                android:text="完成" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

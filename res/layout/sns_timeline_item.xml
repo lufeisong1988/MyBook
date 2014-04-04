@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sns_listitem_normal"
+    android:orientation="horizontal"
+    android:paddingLeft="14.0dip"
+    android:paddingRight="14.0dip"
+    android:paddingTop="13.0dip" >
+
+    <ImageView
+        android:id="@+id/album_avatar_iv"
+        style="@style/SnsAvatarFrom"
+        android:layout_marginTop="1.0dip"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/sns_timeline_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/album_nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="#2f548f"
+                    android:textSize="15.0dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.starbaby.diyBook.clientwidget.CollapsibleTextView
+                android:id="@+id/album_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/sns_clickable_bg"
+                android:textColor="#ff000000"
+                android:textSize="14.0dip" />
+
+            <LinearLayout
+                android:id="@+id/album_images_li"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:orientation="vertical" >
+
+                <!-- <include layout="@layout/message_detail_imagesline" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/album_publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sns_word_color"
+                    android:textSize="12.0dip" />
+                <!--
+                <TextView android:textSize="12.0dip" android:textColor="@color/sns_word_color" android:id="@+id/album_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                <ImageView android:layout_gravity="center" android:id="@+id/album_groupid" android:background="@drawable/group_id_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />"
+ 					<TextView android:textSize="12.0dip" android:textColor="@color/sns_link_color" android:id="@+id/album_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                -->
+
+                <TextView
+                    android:id="@+id/album_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/sns_clickable_bg"
+                    android:gravity="center"
+                    android:text="@string/sns_friends_item_del"
+                    android:textColor="@color/sns_link_color"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/album_fill_view"
+            android:layout_width="fill_parent"
+            android:layout_height="17.0dip"
+            android:layout_below="@id/sns_timeline_frame" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sns_timeline_frame"
+            android:paddingTop="4.0dip" >
+
+            <LinearLayout
+                android:id="@+id/album_list_fatherview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13.0dip"
+                android:background="@drawable/friendactivity_comment_list_normal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="3.0dip" >
+
+                <!--
+                <TextView android:textSize="14.0dip" android:textColor="@color/sns_link_color" android:gravity="bottom" android:id="@+id/album_liked_list_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:gravity="center" android:id="@+id/album_list_line" android:background="@drawable/friendactivity_comment_detail_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+                -->
+
+                <LinearLayout
+                    android:id="@+id/album_comment_list_li"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--
+             <LinearLayout android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sns_timeline_frame">
+            <LinearLayout android:id="@+id/sns_post_again_ll" android:background="@drawable/friendactivity_comment_list_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:layout_below="@id/sns_timeline_frame">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/post_again_click_id" android:background="@drawable/sns_timeline_comment_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/nw_icon" android:paddingLeft="3.0dip" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/net_warn_icon" />
+                    <TextView android:textColor="@color/sns_word_color" android:layout_gravity="center" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_post_error_touch_again" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sns_timeline_frame"
+            android:layout_marginBottom="-17.0dip"
+            android:gravity="bottom|right|center"
+            android:orientation="horizontal" >
+
+            <!--
+                 <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_comment_container" android:background="@drawable/friendactivity_comment_frame_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_like_img" android:background="@drawable/friendactivity_comment_frame" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip">
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/album_like_icon" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/friendactivity_comment_likeicon" />
+                        <TextView android:textColor="@color/white" android:id="@+id/album_like_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/sns_like" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_comment_li" android:background="@drawable/friendactivity_comment_frame" android:layout_width="98.0dip" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/album_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/friendactivity_comment_writeicon"  />
+                        <TextView android:textColor="@color/white" android:id="@+id/album_comment_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/sns_comment" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            -->
+
+            <ImageButton
+                android:id="@+id/album_show_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingBottom="17.0dip"
+                android:paddingLeft="1.0dip"
+                android:paddingTop="20.0dip"
+                android:src="@drawable/friendactivity_comment_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

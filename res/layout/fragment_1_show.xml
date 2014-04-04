@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="486dp"
+        android:layout_height="230dp"
+        android:background="@drawable/fragment_1_show_background" >
+
+        <TextView
+            android:id="@+id/fragment_1_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="80dp"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:text="     打开任意一本书，展开菜单，点击”做书模式“即可制作属于自己的书本，保存后会保存到个人中心的个人书架-----专属宝宝的免费高级私人定制！"
+            android:textColor="#ff00bfff"
+            android:textSize="13sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/fragment_1_bnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/exit"
+            android:soundEffectsEnabled="false" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

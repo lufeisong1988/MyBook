@@ -1,0 +1,10 @@
+<com.starbaby.diyBook.view.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gv_lv4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:cacheColorHint="#00000000"
+    android:divider="#00000000"
+    android:scrollbars="none"
+    android:soundEffectsEnabled="false" >
+
+</com.starbaby.diyBook.view.PullToRefreshListView>

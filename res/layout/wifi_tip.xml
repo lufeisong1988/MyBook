@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wifi_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:text="提示信息"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/wifi_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:text="您当前没有连接到wifi,"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/wifi_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:text="建议切换到wifi网络节省流量！"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wifi_bnt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancle"
+            android:soundEffectsEnabled="false"
+            android:text="稍后查看"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/wifi_bnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ensure"
+            android:soundEffectsEnabled="false"
+            android:text="继续查看"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,754 @@
+com.starbaby.diyBook.BuildConfig
+com.starbaby.diyBook.R:
+    10:10:public R()
+com.starbaby.diyBook.adapter.CommentAdapter
+com.starbaby.diyBook.adapter.ListViewFriendsAdapter$CallShowInterface
+com.starbaby.diyBook.adapter.ListViewPersonalDiaryAdapter:
+    public static final int NO_PIC_ITEM
+    public static final int PIC_ITEM
+    public static final int COUNT_ITEM
+com.starbaby.diyBook.adapter.ShareAdapter
+com.starbaby.diyBook.adapter.SortAdapter:
+    119:124:private java.lang.String getAlpha(java.lang.String)
+com.starbaby.diyBook.cache.CoverCacheFromHttp:
+    private static final java.lang.String WHOLESALE_CONV
+com.starbaby.diyBook.cache.FileCache:
+    35:40:public void clear()
+com.starbaby.diyBook.cache.GetCoverCache3:
+    java.lang.String section
+com.starbaby.diyBook.cache.ImageFileCache:
+    private static final java.lang.String CACHDIR
+    private static final java.lang.String WHOLESALE_CONV
+    private static final int MB
+    private static final int CACHE_SIZE
+    private static final int FREE_SD_SPACE_NEEDED_TO_CACHE
+    42:53:public android.graphics.Bitmap getImage(java.lang.String)
+    142:145:public void updateFileTime(java.lang.String)
+com.starbaby.diyBook.cache.MemoryCache:
+    private static final java.lang.String TAG
+com.starbaby.diyBook.cache.MusicCache:
+    private static final java.lang.String CACHDIR
+com.starbaby.diyBook.clientapi.ApiClient:
+    public static final java.lang.String UTF_8
+    public static final java.lang.String DESC
+    public static final java.lang.String ASC
+    public static final java.lang.String HOST
+    private static final int TIMEOUT_CONNECTION
+    private static final int TIMEOUT_SOCKET
+    private static final int RETRY_TIME
+    private static final int SYS
+    private static final java.lang.String IMG
+    44:44:public ApiClient()
+    161:168:public static com.starbaby.diyBook.clientbean.FansList getFansList(com.starbaby.diyBook.clientapp.AppContext,int,int)
+    285:296:public static com.starbaby.diyBook.clientbean.FriendPostList getPostList(com.starbaby.diyBook.clientapp.AppContext,int,int,int,int)
+com.starbaby.diyBook.clientapp.AppConfig:
+    private static final java.lang.String APP_CONFIG
+    public static final java.lang.String TEMP_TWEET
+    public static final java.lang.String TEMP_TWEET_IMAGE
+    public static final java.lang.String TEMP_MESSAGE
+    public static final java.lang.String TEMP_COMMENT
+    public static final java.lang.String TEMP_POST_TITLE
+    public static final java.lang.String TEMP_POST_CATALOG
+    public static final java.lang.String TEMP_POST_CONTENT
+    public static final java.lang.String CONF_APP_UNIQUEID
+    public static final java.lang.String CONF_COOKIE
+    public static final java.lang.String CONF_ACCESSTOKEN
+    public static final java.lang.String CONF_ACCESSSECRET
+    public static final java.lang.String CONF_EXPIRESIN
+    public static final java.lang.String CONF_LOAD_IMAGE
+    public static final java.lang.String CONF_SCROLL
+    public static final java.lang.String CONF_HTTPS_LOGIN
+    public static final java.lang.String CONF_VOICE
+    public static final java.lang.String CONF_CHECKUP
+    59:59:public static android.content.SharedPreferences getSharedPreferences(android.content.Context)
+    67:67:public static boolean isLoadImage(android.content.Context)
+    72:72:public java.lang.String getCookie()
+    76:77:public void setAccessToken(java.lang.String)
+    80:80:public java.lang.String getAccessToken()
+    84:85:public void setAccessSecret(java.lang.String)
+    88:88:public java.lang.String getAccessSecret()
+    92:93:public void setExpiresIn(long)
+com.starbaby.diyBook.clientapp.AppContext:
+    public static final int NETTYPE_WIFI
+    public static final int NETTYPE_CMWAP
+    public static final int NETTYPE_CMNET
+    public static final int POST_DEFAULT_TYPE
+    public static final int POST_TIME_TYPE
+    private static final int CACHE_TIME
+    public static final int NET_ERROR
+    public static final int PAGE_SIZE
+    public static final java.lang.String FACE_URL
+    301:309:public boolean isCacheDataFailure(java.lang.String)
+    319:343:public com.starbaby.diyBook.clientbean.FriendPostList getMessageList(int,int,boolean,int)
+    635:652:private int clearCacheFolder(java.io.File,long)
+    670:676:public void clearAppCache()
+    750:751:public void setFaceUrl(java.lang.String)
+com.starbaby.diyBook.clientapp.AppException:
+    private static final boolean Debug
+    public static final byte TYPE_NETWORK
+    public static final byte TYPE_SOCKET
+    public static final byte TYPE_HTTP_CODE
+    public static final byte TYPE_HTTP_ERROR
+    public static final byte TYPE_XML
+    public static final byte TYPE_IO
+    public static final byte TYPE_RUN
+    public static final byte TYPE_JSON
+    96:142:public void saveErrorLog(java.lang.Exception)
+    153:153:public static com.starbaby.diyBook.clientapp.AppException socket(java.lang.Exception)
+    157:162:public static com.starbaby.diyBook.clientapp.AppException io(java.lang.Exception)
+    170:170:public static com.starbaby.diyBook.clientapp.AppException run(java.lang.Exception)
+com.starbaby.diyBook.clientapp.AppManager:
+    50:52:public void finishActivity()
+    67:72:public void finishActivity(java.lang.Class)
+com.starbaby.diyBook.clientbean.Base:
+    public static final java.lang.String UTF8
+    public static final java.lang.String NODE_ROOT
+com.starbaby.diyBook.clientbean.Comment:
+    private int first
+    36:36:public int getFirst()
+    40:41:public void setFirst(int)
+    68:69:public void setReplies(java.lang.Integer)
+    108:109:public void setPicCount(int)
+    112:112:public java.util.List getPics()
+    116:117:public void setPics(java.util.List)
+com.starbaby.diyBook.clientbean.CommentList:
+    32:33:public void setCommentMap(java.util.HashMap)
+    40:41:public void setCommentList(java.util.List)
+    56:57:public void setPageSize(int)
+com.starbaby.diyBook.clientbean.EmojiDate:
+    17:17:public EmojiDate()
+com.starbaby.diyBook.clientbean.Entity:
+    protected int newmsgsize
+    46:46:public java.lang.String getCacheKey()
+    54:54:public int getNewmsgsize()
+    58:59:public void setNewmsgsize(int)
+com.starbaby.diyBook.clientbean.Fans:
+    private java.lang.String detail
+    private java.lang.String catalog
+    35:35:public int getIsNoted()
+    41:41:public java.lang.String getDetail()
+    44:45:public void setDetail(java.lang.String)
+    47:47:public java.lang.String getCatalog()
+    50:51:public void setCatalog(java.lang.String)
+com.starbaby.diyBook.clientbean.FansList:
+    private int fansSize
+    29:29:public int getFansSize()
+    33:33:public int getNoteSize()
+    63:86:public static com.starbaby.diyBook.clientbean.FansList parse(java.lang.String)
+com.starbaby.diyBook.clientbean.FriendPost:
+    private int tag
+    private int type
+    45:45:public int getPid()
+    58:58:public java.lang.String getViews()
+    64:64:public java.lang.String getReplies()
+    88:88:public int getDisplayorder()
+    122:123:public void setComments(java.util.List)
+    125:125:public java.lang.String getSource()
+    131:131:public int getTag()
+    134:135:public void setTag(int)
+    137:137:public int getType()
+    140:141:public void setType(int)
+    146:147:public void setSmallPics(java.util.ArrayList)
+    152:153:public void setBigPics(java.util.ArrayList)
+    155:155:public boolean isShowView()
+    158:159:public void setShowView(boolean)
+com.starbaby.diyBook.clientbean.FriendPostList:
+    public static final int POST_TYPE_ALL
+    public static final int POST_TYPE_CHAT
+    public static final int POST_TYPE_DIARY
+    public static final int POST_TYPE_MOMENT
+com.starbaby.diyBook.clientbean.Notice:
+    71:71:public int getIgnore()
+com.starbaby.diyBook.clientbean.NoticeList:
+    public static final int CATALOG_ALL
+    public static final int CATALOG_COMMENT
+    public static final int CATALOG_REPLY_C
+    public static final int CATALOG_REPLY_S
+    public static final int CATALOG_ATTENTION
+    public static final int CATALOG_FRIEND
+    public static final int CATALOG_AT
+com.starbaby.diyBook.clientbean.Picture:
+    private java.lang.String small
+    private java.lang.String big
+    33:33:public java.lang.String getSmall()
+    37:38:public void setSmall(java.lang.String)
+    41:41:public java.lang.String getBig()
+    45:46:public void setBig(java.lang.String)
+    72:91:public static com.starbaby.diyBook.clientbean.Picture parseUpdate(java.lang.String)
+com.starbaby.diyBook.clientbean.Post:
+    private int tag
+    private int type
+    private java.lang.String avatarurl
+    private java.io.File imgFile
+    46:46:public int getPid()
+    77:77:public java.lang.String getAuthor()
+    95:95:public java.lang.String getAvatarurl()
+    98:99:public void setAvatarurl(java.lang.String)
+    101:101:public java.io.File getImgFile()
+    104:105:public void setImgFile(java.io.File)
+    119:119:public java.util.List getComments()
+    122:123:public void setComments(java.util.List)
+    131:131:public int getTag()
+    134:135:public void setTag(int)
+    137:137:public int getType()
+    140:141:public void setType(int)
+    144:163:public static com.starbaby.diyBook.clientbean.Post parse(java.lang.String)
+    168:179:public static int parseDelPost(java.lang.String)
+com.starbaby.diyBook.clientbean.PostList:
+    public static final int POST_TYPE_ALL
+    public static final int POST_TYPE_CHAT
+    public static final int POST_TYPE_DIARY
+    public static final int POST_TYPE_MOMENT
+    40:40:public int getIsNoted()
+    46:104:public static com.starbaby.diyBook.clientbean.PostList parse(java.lang.String,int,int)
+com.starbaby.diyBook.clientbean.URLs
+com.starbaby.diyBook.clientbean.User:
+    94:115:public static com.starbaby.diyBook.clientbean.User parseRegister(java.lang.String)
+    120:129:public static java.lang.String parseBirthday(java.lang.String)
+com.starbaby.diyBook.clientcommon.EmoticonUtil:
+    14:14:public EmoticonUtil()
+    24:24:public static java.lang.Integer getEmoticonResId(java.lang.String,android.content.Context)
+com.starbaby.diyBook.clientcommon.EncodeUtil
+com.starbaby.diyBook.clientcommon.FaceConversionUtil:
+    66:76:public android.text.SpannableString addFace(android.content.Context,int,java.lang.String)
+com.starbaby.diyBook.clientcommon.FileUtils:
+    24:24:public FileUtils()
+    34:47:public static void write(android.content.Context,java.lang.String,java.lang.String)
+    59:66:public static java.lang.String read(android.content.Context,java.lang.String)
+    73:80:public static java.lang.String readFromFile(java.io.File)
+    87:103:private static java.lang.String readInStream(java.io.FileInputStream)
+    108:113:public static java.io.File createFile(java.lang.String,java.lang.String)
+    125:162:public static boolean writeFile(byte[],java.lang.String,java.lang.String)
+    181:185:public static java.lang.String getFileNameNoFormat(java.lang.String)
+    208:215:public static long getFileSize(java.lang.String)
+    225:234:public static java.lang.String getFileSize(long)
+    244:255:public static java.lang.String formatFileSize(long)
+    264:280:public static long getDirSize(java.io.File)
+    289:298:public long getFileList(java.io.File)
+    303:311:public static byte[] toBytes(java.io.InputStream)
+    321:328:public static boolean checkFileExists(java.lang.String)
+    337:352:public static long getFreeDiskSpace()
+    362:369:public static boolean createDirectory(java.lang.String)
+    377:383:public static boolean checkSaveLocationExists()
+    393:422:public static boolean deleteDirectory(java.lang.String)
+    432:452:public static boolean deleteFile(java.lang.String)
+    464:477:public static java.util.List getEmojiFile(android.content.Context)
+com.starbaby.diyBook.clientcommon.ImageUtils:
+    public static final java.lang.String SDCARD_MNT
+    public static final java.lang.String SDCARD
+    public static final int REQUEST_CODE_GETIMAGE_BYSDCARD
+    public static final int REQUEST_CODE_GETIMAGE_BYCAMERA
+    public static final int REQUEST_CODE_GETIMAGE_BYCROP
+    43:43:public ImageUtils()
+    62:63:public static void saveImage(android.content.Context,java.lang.String,android.graphics.Bitmap)
+    66:74:public static void saveImage(android.content.Context,java.lang.String,android.graphics.Bitmap,int)
+    99:113:public static android.graphics.Bitmap getBitmap(android.content.Context,java.lang.String)
+    172:174:public static java.lang.String getTempFileName()
+    183:183:public static java.lang.String getCamerPath()
+    278:299:public static java.lang.String getLatestImage(android.app.Activity)
+    366:382:public static android.graphics.Bitmap scaleBitmap(android.graphics.Bitmap)
+    392:432:public static android.graphics.Bitmap reDrawBitMap(android.app.Activity,android.graphics.Bitmap)
+    441:449:public static android.graphics.Bitmap drawableToBitmap(android.graphics.drawable.Drawable)
+    461:478:public static android.graphics.Bitmap getRoundedCornerBitmap(android.graphics.Bitmap,float)
+    487:518:public static android.graphics.Bitmap createReflectionImageWithOrigin(android.graphics.Bitmap)
+    527:528:public static android.graphics.drawable.Drawable bitmapToDrawable(android.graphics.Bitmap)
+    537:554:public static java.lang.String getImageType(java.io.File)
+    564:572:public static java.lang.String getImageType(java.io.InputStream)
+    582:594:public static java.lang.String getImageType(byte[])
+    598:601:private static boolean isJPEG(byte[])
+    605:608:private static boolean isGIF(byte[])
+    613:616:private static boolean isPNG(byte[])
+    622:625:private static boolean isBMP(byte[])
+com.starbaby.diyBook.clientcommon.MediaUtils:
+    14:14:public MediaUtils()
+    82:119:public static java.lang.String getMIMEType(java.lang.String)
+com.starbaby.diyBook.clientcommon.MethodsCompat:
+    24:24:public MethodsCompat()
+    28:29:public static void overridePendingTransition(android.app.Activity,int,int)
+    47:47:public static java.io.File getExternalCacheDir(android.content.Context)
+    52:55:public static void recreate(android.app.Activity)
+    59:62:public static void setLayerType(android.view.View,int,android.graphics.Paint)
+    66:69:public static void setUiOptions(android.view.Window,int)
+com.starbaby.diyBook.clientcommon.StringUtils:
+    22:22:public StringUtils()
+    34:38:public static java.util.Date toDate(java.lang.String)
+    48:89:public static java.lang.String friendly_time(java.lang.String)
+    93:133:public static java.lang.String friendly_time(java.util.Date)
+    142:152:public static boolean isToday(java.lang.String)
+    184:186:public static boolean isEmail(java.lang.String)
+    216:218:public static long toLong(java.lang.String)
+    223:227:public static double toDouble(java.lang.String)
+    245:245:public static java.io.InputStream toInputStream(java.lang.String)
+    268:276:public static byte[] readInstream(java.io.InputStream)
+com.starbaby.diyBook.clientcommon.UIHelper:
+    public static final int LISTVIEW_ACTION_INIT
+    public static final int LISTVIEW_ACTION_REFRESH
+    public static final int LISTVIEW_ACTION_SCROLL
+    public static final int LISTVIEW_ACTION_CHANGE_CATALOG
+    public static final int LISTVIEW_DATA_MORE
+    public static final int LISTVIEW_DATA_LOADING
+    public static final int LISTVIEW_DATA_FULL
+    public static final int LISTVIEW_DATA_EMPTY
+    public static final int REQUEST_CODE_FOR_REPLY
+    public static final int REQUEST_CODE_FOR_VIEW
+    public static final int REQUEST_CODE_FOR_FINISH
+    public static final int REQUEST_CODE_FOR_DIALOGIN
+    public static final int REQUEST_CODE_FOR_ATME
+    public static final int REQUEST_CODE_FOR_DEL
+    public static final int LISTVIEW_DATATYPE_FRIENDS_ALL
+    public static final int LISTVIEW_DATATYPE_FRIENDS_CHAT
+    public static final int LISTVIEW_DATATYPE_FRIENDS_DIARY
+    public static final int LISTVIEW_DATATYPE_FRIENDS_MOMENT
+    61:61:public UIHelper()
+    85:89:public static void showFriends(android.content.Context,int,java.lang.String)
+    258:272:public static android.text.SpannableString parsePostpan(java.lang.String,java.lang.String,java.lang.String)
+    309:314:public static void showPostDetail(android.content.Context,int,int)
+    322:345:public static void clearAppCache(android.app.Activity)
+    421:437:public static void Exit(android.content.Context)
+    445:456:public static void ExitByMin(android.content.Context)
+com.starbaby.diyBook.clientcommon.UIHelper$2
+com.starbaby.diyBook.clientcommon.UIHelper$3
+com.starbaby.diyBook.clientcommon.UIHelper$7
+com.starbaby.diyBook.clientcommon.UIHelper$8
+com.starbaby.diyBook.clientcommon.UIHelper$9
+com.starbaby.diyBook.clientui.ImageViewPager:
+    private static final java.lang.String STATE_POSITION
+com.starbaby.diyBook.clientui.MessageDetail:
+    private static final int DATA_LOAD_ING
+    private static final int DATA_LOAD_COMPLETE
+    private static final int INPUT_START
+com.starbaby.diyBook.clientui.MessagePub:
+    private static final int DELAY_TIMES
+    public static final int POST_PUB_REQUEST
+com.starbaby.diyBook.clientui.ReplyDialog:
+    private static final java.lang.String PREFIX
+com.starbaby.diyBook.clientwidget.CollapsibleTextView:
+    private static final int DEFAULT_MAX_LINE_COUNT
+com.starbaby.diyBook.clientwidget.Compat:
+    private static final int SIXTY_FPS_INTERVAL
+    11:11:public Compat()
+com.starbaby.diyBook.clientwidget.DotView:
+    35:36:public DotView(android.content.Context)
+    64:68:public void setCount(int)
+com.starbaby.diyBook.clientwidget.IPhotoView
+com.starbaby.diyBook.clientwidget.NewDataToast:
+    29:30:public NewDataToast(android.content.Context)
+    60:61:public void setIsSound(boolean)
+com.starbaby.diyBook.clientwidget.PhotoView:
+    62:62:public boolean canZoom()
+    67:67:public android.graphics.RectF getDisplayRect()
+    72:72:public float getMinScale()
+    77:77:public float getMidScale()
+    82:82:public float getMaxScale()
+    87:87:public float getScale()
+    97:98:public void setAllowParentInterceptOnEdge(boolean)
+    102:103:public void setMinScale(float)
+    107:108:public void setMidScale(float)
+    112:113:public void setMaxScale(float)
+    142:143:public void setOnMatrixChangeListener(com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnMatrixChangedListener)
+    152:153:public void setOnPhotoTapListener(com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnPhotoTapListener)
+    157:158:public void setOnViewTapListener(com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnViewTapListener)
+    171:172:public void setZoomable(boolean)
+    176:177:public void zoomTo(float,float,float)
+com.starbaby.diyBook.clientwidget.PhotoViewAttacher:
+    static final java.lang.String LOG_TAG
+    static final int EDGE_NONE
+    static final int EDGE_LEFT
+    static final int EDGE_RIGHT
+    static final int EDGE_BOTH
+    public static final float DEFAULT_MAX_SCALE
+    public static final float DEFAULT_MID_SCALE
+    public static final float DEFAULT_MIN_SCALE
+    66:71:private static void checkZoomLevels(float,float,float)
+    178:178:public final boolean canZoom()
+    255:255:public float getMinScale()
+    260:260:public float getMidScale()
+    265:265:public float getMaxScale()
+    463:464:public void setAllowParentInterceptOnEdge(boolean)
+    468:470:public void setMinScale(float)
+    474:476:public void setMidScale(float)
+    480:482:public void setMaxScale(float)
+    491:492:public final void setOnMatrixChangeListener(com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnMatrixChangedListener)
+    496:497:public final void setOnPhotoTapListener(com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnPhotoTapListener)
+    501:502:public final void setOnViewTapListener(com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnViewTapListener)
+com.starbaby.diyBook.clientwidget.PhotoViewAttacher$AnimatedZoomRunnable:
+    static final float ANIMATION_SCALE_PER_ITERATION_IN
+    static final float ANIMATION_SCALE_PER_ITERATION_OUT
+com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnPhotoTapListener:
+    public abstract void onPhotoTap(android.view.View,float,float)
+com.starbaby.diyBook.clientwidget.PhotoViewAttacher$OnViewTapListener:
+    public abstract void onViewTap(android.view.View,float,float)
+com.starbaby.diyBook.clientwidget.PullToRefreshListView:
+    private static final java.lang.String TAG
+    private static final int PULL_To_REFRESH
+    private static final int RELEASE_To_REFRESH
+    private static final int REFRESHING
+    private static final int DONE
+    308:312:public void clickRefresh()
+com.starbaby.diyBook.clientwidget.SDK16:
+    22:22:public SDK16()
+com.starbaby.diyBook.clientwidget.VersionedGestureDetector:
+    static final java.lang.String LOG_TAG
+com.starbaby.diyBook.clientwidget.VersionedGestureDetector$EclairDetector:
+    private static final int INVALID_POINTER_ID
+com.starbaby.diyBook.controller.CalculateFile:
+    7:7:public CalculateFile()
+    36:42:public static java.lang.String setFileSize(long)
+com.starbaby.diyBook.controller.CheckEnterTime
+com.starbaby.diyBook.controller.CopyFile:
+    10:10:public CopyFile()
+com.starbaby.diyBook.controller.CreatePageProvider:
+    public int imageWidth
+    public int imageHeight
+com.starbaby.diyBook.controller.DeleteCache:
+    16:16:public DeleteCache()
+com.starbaby.diyBook.controller.GetArtBook
+com.starbaby.diyBook.controller.GetArtBook$1
+com.starbaby.diyBook.controller.GetArtBook$2
+com.starbaby.diyBook.controller.GetArtBook$3
+com.starbaby.diyBook.controller.GetArtBook$4
+com.starbaby.diyBook.controller.GetBitFromHttp:
+    128:136:static byte[] readStream(java.io.InputStream)
+com.starbaby.diyBook.controller.GetBookCoverInfo
+com.starbaby.diyBook.controller.GetBookCoverInfo$1
+com.starbaby.diyBook.controller.GetBookCoverInfo$2
+com.starbaby.diyBook.controller.GetMusFromHttp:
+    18:18:public GetMusFromHttp()
+com.starbaby.diyBook.controller.GetScardPath
+com.starbaby.diyBook.controller.PageProvider:
+    public int imageWidth
+    public int imageHeight
+com.starbaby.diyBook.controller.ReadSDcard:
+    14:14:public ReadSDcard()
+com.starbaby.diyBook.controller.VistPageProvider:
+    public int imageWidth
+    public int imageHeight
+com.starbaby.diyBook.fragment.Fragment1:
+    432:449:public void collectLocalBook(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.starbaby.diyBook.fragment.Fragment5
+com.starbaby.diyBook.fragment.Fragment5$1
+com.starbaby.diyBook.fragment.Fragment5$2
+com.starbaby.diyBook.fragment.FragmentS3:
+    android.widget.TextView poster_tv
+com.starbaby.diyBook.helper.CurlMesh:
+    private static final boolean DRAW_CURL_POSITION
+    private static final boolean DRAW_POLYGON_OUTLINES
+    private static final boolean DRAW_SHADOW
+    private static final boolean DRAW_TEXTURE
+    private java.nio.FloatBuffer mBufCurlPositionLines
+    private int mCurlPositionLinesCount
+com.starbaby.diyBook.helper.CurlPage:
+    public static final int SIDE_BACK
+    public static final int SIDE_BOTH
+    public static final int SIDE_FRONT
+    177:188:public void setColor(int,int)
+com.starbaby.diyBook.helper.CurlRenderer:
+    public static final int PAGE_LEFT
+    public static final int PAGE_RIGHT
+    public static final int SHOW_ONE_PAGE
+    public static final int SHOW_TWO_PAGES
+    private static final boolean USE_PERSPECTIVE_PROJECTION
+com.starbaby.diyBook.helper.DBCacheHelper:
+    private static final java.lang.String DATABASE_NAME
+    java.sql.Connection conn
+    java.lang.String section
+com.starbaby.diyBook.helper.DBHelper:
+    private static final java.lang.String DATABASE_NAME
+    java.sql.Connection conn
+com.starbaby.diyBook.helper.DBPlayinfoHelper:
+    private static final java.lang.String playinfo
+    100:112:public java.util.ArrayList getBitUrl(int)
+    118:130:public java.util.ArrayList getBitId(int)
+    137:144:public void deleteAll(int)
+com.starbaby.diyBook.helper.DrawRect:
+    10:10:public DrawRect()
+com.starbaby.diyBook.helper.HttpHelper:
+    23:23:public HttpHelper()
+com.starbaby.diyBook.helper.MusicHelper:
+    14:14:public MusicHelper()
+    147:147:public static boolean isMusicSt()
+    156:164:public static void setMusicSt(boolean)
+com.starbaby.diyBook.helper.NamePic:
+    private static final java.lang.String WHOLESALE_CONV
+com.starbaby.diyBook.helper.SaveShadow:
+    18:18:public SaveShadow()
+com.starbaby.diyBook.main.BookSection:
+    android.widget.Button wait
+    1345:1354:void showWait()
+com.starbaby.diyBook.main.BookSection$11:
+    997:998:public void onProgressChanged(com.starbaby.diyBook.view.mSeekBar,int,boolean)
+com.starbaby.diyBook.main.MainActivity:
+    private android.support.v4.app.Fragment saveDetails
+    android.media.MediaPlayer mp
+    android.widget.TextView poster_tv
+    private static final int FLING_MIN_DISTANCE
+    private static final int FLING_MIN_VELOCITY
+    android.widget.Button wait
+    1568:1577:void showWait()
+com.starbaby.diyBook.main.MainActivity$15:
+    1339:1340:public void onProgressChanged(com.starbaby.diyBook.view.mSeekBar,int,boolean)
+com.starbaby.diyBook.main.MoreBook:
+    private static final int FLING_MIN_DISTANCE
+    private static final int FLING_MIN_VELOCITY
+com.starbaby.diyBook.main.Share:
+    181:190:private void shareToFriend(java.io.File)
+    192:201:private void shareToTimeLine(java.io.File)
+com.starbaby.diyBook.main.UserInfo:
+    private int note_state
+    android.widget.Button wait
+    android.widget.TextView tv1
+    android.widget.TextView tv2
+    1557:1563:void showWait()
+com.starbaby.diyBook.main.UserInfo$10:
+    1192:1193:public void onProgressChanged(com.starbaby.diyBook.view.mSeekBar,int,boolean)
+com.starbaby.diyBook.main.WorkingShow:
+    private static final int FLING_MIN_DISTANCE
+    private static final int FLING_MIN_VELOCITY
+    android.widget.Button wait
+    1375:1384:void showWait()
+com.starbaby.diyBook.main.WorkingShow$12:
+    1077:1078:public void onProgressChanged(com.starbaby.diyBook.view.mSeekBar,int,boolean)
+com.starbaby.diyBook.main.ZuoShuActivity:
+    com.starbaby.diyBook.controller.GetArtBook mGetArtBook
+    private static final int NONE
+    private static final int DRAG
+    private static final int ZOOM
+    757:770:public android.graphics.Bitmap scaleBit(android.graphics.Bitmap,android.widget.ImageView)
+com.starbaby.diyBook.net.AsyncHttpGet:
+    private static final long serialVersionUID
+com.starbaby.diyBook.net.AsyncHttpPost:
+    private static final long serialVersionUID
+com.starbaby.diyBook.net.BaseException:
+    private static final long serialVersionUID
+    10:12:public BaseException(int)
+    20:22:public BaseException(int,java.lang.String,java.lang.Throwable)
+    25:27:public BaseException(int,java.lang.Throwable)
+com.starbaby.diyBook.net.BaseRequest:
+    private static final long serialVersionUID
+    43:44:protected void setConnectTimeout(int)
+    47:48:protected void setReadTimeout(int)
+    51:51:public org.apache.http.client.methods.HttpUriRequest getRequest()
+com.starbaby.diyBook.net.DefaultThreadPool:
+    46:51:public static void shutdown()
+    57:72:public static void shutdownRightnow()
+    76:76:public static void removeTaskFromQueue()
+com.starbaby.diyBook.net.NetworkUtils:
+    8:8:public NetworkUtils()
+    35:41:public static java.lang.String decode(java.lang.String)
+com.starbaby.diyBook.net.RequestException:
+    private static final long serialVersionUID
+    public static final int SERVER_CLOSED_EXCEPTION
+    public static final int CONNECT_EXCEPTION
+    public static final int SOCKET_EXCEPTION
+    public static final int BIND_EXCEPTION
+    public static final int CONNECT_TIMEOUT_EXCEPTION
+    public static final int UNSUPPORTED_ENCODEING_EXCEPTION
+    public static final int SOCKET_TIMEOUT_EXCEPTION
+    public static final int CLIENT_PROTOL_EXCEPTION
+    public static final int IO_EXCEPTION
+    77:79:public RequestException(int,java.lang.String,java.lang.Throwable)
+    82:84:public RequestException(int,java.lang.Throwable)
+    92:94:public RequestException(int)
+com.starbaby.diyBook.net.RequestParameter:
+    private static final long serialVersionUID
+    private java.io.File file
+    17:18:public void setName(java.lang.String)
+    25:26:public void setValue(java.lang.String)
+    37:37:public java.lang.Integer getValue2()
+    42:43:public void setValue2(java.lang.Integer)
+    51:51:public java.io.File getFile()
+    56:57:public void setFile()
+    58:61:public RequestParameter(java.lang.String,java.io.File)
+com.starbaby.diyBook.net.SyncHttpGet
+com.starbaby.diyBook.open.BookUtils:
+    10:10:public BookUtils()
+    70:70:public static float toScreenX(float,float,float)
+    81:81:public static float toScreenY(float,float)
+    91:91:public static float toScreenWidth(float,float,float)
+    101:101:public static float toScreenHeight(float,float)
+com.starbaby.diyBook.open.PerspectiveView:
+    float nr_x
+    float nr_y
+    float barW
+    75:76:public void setManimatorListener(com.starbaby.diyBook.open.PerspectiveView$ManimatorListener)
+com.starbaby.diyBook.open.TextureMesh:
+    138:138:public boolean hasTexture()
+    146:147:public void clear()
+    150:150:public boolean isClear()
+com.starbaby.diyBook.open.Vertex:
+    25:27:public void translate(float,float)
+com.starbaby.diyBook.sharesdk.EditPage:
+    private static final int MAX_TEXT_COUNT
+    private static final int MSG_PLATFORM_LIST_GOT
+com.starbaby.diyBook.sharesdk.OnekeyShare:
+    private static final int MSG_TOAST
+    private static final int MSG_ACTION_CCALLBACK
+    private static final int MSG_CANCEL_NOTIFY
+    103:104:public void setTitle(java.lang.String)
+    108:109:public void setTitleUrl(java.lang.String)
+    123:124:public void setImageUrl(java.lang.String)
+    128:129:public void serMusicUrl(java.lang.String)
+    133:134:public void setUrl(java.lang.String)
+    138:139:public void setFilePath(java.lang.String)
+    143:144:public void setComment(java.lang.String)
+    148:149:public void setSite(java.lang.String)
+    153:154:public void setSiteUrl(java.lang.String)
+    158:159:public void setVenueName(java.lang.String)
+    163:164:public void setVenueDescription(java.lang.String)
+    198:203:public void setCustomerLogo(android.graphics.Bitmap,java.lang.String,android.view.View$OnClickListener)
+    207:209:public void setDialogMode()
+com.starbaby.diyBook.sharesdk.PlatformGridView:
+    private static final int MSG_PLATFORM_LIST_GOT
+    78:80:public PlatformGridView(android.content.Context,android.util.AttributeSet)
+com.starbaby.diyBook.sharesdk.ShareCore:
+    104:110:public static boolean canAuthorize(android.content.Context,java.lang.String)
+com.starbaby.diyBook.utils.CharacterParser:
+    private java.lang.String resource
+    69:69:public java.lang.String getResource()
+    73:74:public void setResource(java.lang.String)
+    135:135:public java.lang.String getSpelling()
+com.starbaby.diyBook.utils.EncodeUtil:
+    7:7:public EncodeUtil()
+com.starbaby.diyBook.utils.HttpPort:
+    7:7:public HttpPort()
+com.starbaby.diyBook.utils.ImageLoader:
+    java.lang.String section
+    209:211:public void clearCache()
+com.starbaby.diyBook.utils.ImageLoaderFans:
+    java.lang.String section
+    195:197:public void clearCache()
+com.starbaby.diyBook.utils.JavaBean:
+    17:17:public static java.util.ArrayList getBookList()
+    20:21:public static void setBookList(java.util.ArrayList)
+    23:23:public static java.util.ArrayList getBookCoverList()
+    26:27:public static void setBookCoverList(java.util.ArrayList)
+    29:29:public static java.util.ArrayList getBookNameList()
+    32:33:public static void setBookNameList(java.util.ArrayList)
+    35:35:public static java.util.ArrayList getBookIdList()
+    38:39:public static void setBookIdList(java.util.ArrayList)
+    41:41:public static java.util.ArrayList getBookUpdateTime()
+    44:45:public static void setBookUpdateTime(java.util.ArrayList)
+com.starbaby.diyBook.utils.JavaBean2:
+    16:16:public static java.util.ArrayList getBookCoverList()
+    19:20:public static void setBookCoverList(java.util.ArrayList)
+    22:22:public static java.util.ArrayList getBookNameList()
+    25:26:public static void setBookNameList(java.util.ArrayList)
+    28:28:public static java.util.ArrayList getBookIdList()
+    31:32:public static void setBookIdList(java.util.ArrayList)
+    34:34:public static java.util.ArrayList getBookUpdateTime()
+    37:38:public static void setBookUpdateTime(java.util.ArrayList)
+com.starbaby.diyBook.utils.JavaBean3:
+    9:9:public JavaBean3()
+    15:15:public static java.util.ArrayList getBookCoverList()
+    18:19:public static void setBookCoverList(java.util.ArrayList)
+    21:21:public static java.util.ArrayList getBookNameList()
+    24:25:public static void setBookNameList(java.util.ArrayList)
+    27:27:public static java.util.ArrayList getBookIdList()
+    30:31:public static void setBookIdList(java.util.ArrayList)
+    33:33:public static java.util.ArrayList getBookUpdateTime()
+    36:37:public static void setBookUpdateTime(java.util.ArrayList)
+com.starbaby.diyBook.utils.JavaBeanZuoShu:
+    25:25:public java.util.ArrayList getPlayId()
+    28:29:public void setPlayId(java.util.ArrayList)
+    34:35:public void setPlayList(java.util.ArrayList)
+    37:37:public java.util.ArrayList getMusicList()
+    40:41:public void setMusicList(java.util.ArrayList)
+com.starbaby.diyBook.utils.JsonObject:
+    31:34:public java.lang.String getUSERNAME(java.lang.String)
+    39:42:public java.lang.String getEMAIL(java.lang.String)
+    47:50:public java.lang.String getAVATAR(java.lang.String)
+    55:58:public java.lang.String getEAMIL(java.lang.String)
+    61:64:public java.lang.String getIMAGEURl(java.lang.String)
+    77:80:public int albumsize(java.lang.String)
+    86:89:public java.lang.String getFrameURl(java.lang.String)
+    94:97:public java.lang.String getFrameId(java.lang.String)
+com.starbaby.diyBook.utils.SdcardpathUtils:
+    10:10:public SdcardpathUtils()
+com.starbaby.diyBook.utils.SortModel:
+    29:29:public int getUid()
+com.starbaby.diyBook.utils.UploadUtil:
+    private static final java.lang.String TAG
+    private static final int TIME_OUT
+    private static final java.lang.String CHARSET
+    21:21:public UploadUtil()
+com.starbaby.diyBook.utils.Utils:
+    public static android.database.sqlite.SQLiteDatabase db
+    public static int flag
+    public static android.graphics.Bitmap coverTexture
+    public static android.graphics.Bitmap contentTexture
+    public static float origin_left
+    public static float origin_right
+    public static float origin_top
+    public static float origin_bottom
+    public static float left
+    public static float right
+    public static float bottom
+    public static float top
+    public static int ZuoShuCount
+    24:24:public Utils()
+com.starbaby.diyBook.view.ClearEditText:
+    124:125:public void setShakeAnimation()
+    134:137:public static android.view.animation.Animation shakeAnimation(int)
+com.starbaby.diyBook.view.CreateCurlView:
+    private static final int CURL_LEFT
+    private static final int CURL_NONE
+    private static final int CURL_RIGHT
+    private static final int SET_CURL_TO_LEFT
+    private static final int SET_CURL_TO_RIGHT
+    public static final int SHOW_ONE_PAGE
+    public static final int SHOW_TWO_PAGES
+    139:139:public int getCurrentIndex()
+    393:394:public void setAllowLastPageCurl(boolean)
+    591:592:public void setEnableTouchPressure(boolean)
+    618:619:public void setRenderLeftPage(boolean)
+com.starbaby.diyBook.view.CurlView:
+    public static int timer
+    private static final int CURL_LEFT
+    private static final int CURL_NONE
+    public static final int CURL_RIGHT
+    private static final int SET_CURL_TO_LEFT
+    private static final int SET_CURL_TO_RIGHT
+    private static final int SET_CURL_TO_NO
+    public static final int SHOW_ONE_PAGE
+    public static final int SHOW_TWO_PAGES
+    142:144:public CurlView(android.content.Context,android.util.AttributeSet)
+    150:151:public CurlView(android.content.Context,android.util.AttributeSet,int)
+    416:417:public void setAllowLastPageCurl(boolean)
+    588:589:public void setEnableTouchPressure(boolean)
+    613:614:public void setRenderLeftPage(boolean)
+com.starbaby.diyBook.view.EventLinearLayout:
+    12:12:public boolean isbTrue()
+com.starbaby.diyBook.view.PullToRefreshListView:
+    private static final int TAP_TO_REFRESH
+    private static final int PULL_TO_REFRESH
+    private static final int RELEASE_TO_REFRESH
+    private static final int REFRESHING
+    141:147:public void setLastUpdated(java.lang.CharSequence)
+    315:317:public void onRefreshComplete(java.lang.CharSequence)
+com.starbaby.diyBook.view.VistCurlView:
+    private static final int CURL_LEFT
+    private static final int CURL_NONE
+    private static final int CURL_RIGHT
+    private static final int SET_CURL_TO_LEFT
+    private static final int SET_CURL_TO_RIGHT
+    public static final int SHOW_ONE_PAGE
+    public static final int SHOW_TWO_PAGES
+    private boolean bVist
+    140:140:public int getCurrentIndex()
+    143:144:public void vist(boolean)
+    393:394:public void setAllowLastPageCurl(boolean)
+    591:592:public void setEnableTouchPressure(boolean)
+    618:619:public void setRenderLeftPage(boolean)
+com.starbaby.diyBook.view.VistCurlView$SizeChangedObserver
+com.starbaby.diyBook.view.mSeekBar:
+    67:77:void onProgressRefresh(float,boolean)
+    80:98:private void setThumbPos(int,android.graphics.drawable.Drawable,float,int)
+com.starbaby.diyBook.view.mSeekBar$OnSeekBarChangeListener:
+    public abstract void onProgressChanged(com.starbaby.diyBook.view.mSeekBar,int,boolean)
+com.starbaby.diyBook.xlistview.XListView
+com.starbaby.diyBook.xlistview.XListView$1
+com.starbaby.diyBook.xlistview.XListView$2
+com.starbaby.diyBook.xlistview.XListView$IXListViewListener
+com.starbaby.diyBook.xlistview.XListView$OnXScrollListener
+com.starbaby.diyBook.xlistview.XListViewFooter
+com.starbaby.diyBook.xlistview.XListViewHeader

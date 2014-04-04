@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/tip_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/zuoshu_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="做书模式开启中…."
+        android:textSize="20sp" >
+    </TextView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

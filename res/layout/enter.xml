@@ -1,0 +1,196 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideInset" >
+
+    <RelativeLayout
+        android:id="@+id/enter_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/enter_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/enter_backgrund2" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/enter_background" >
+
+                <TextView
+                    android:id="@+id/enter_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="星宝宝帐号登录(www.starbaby.com)"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="账号"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/enter_shape1"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@+id/enter_nicknameET"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="5dp"
+                                android:background="@null"
+                                android:hint="Email或昵称"
+                                android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                                android:paddingLeft="10dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="密码"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/enter_shape2"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@+id/enter_psw"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="5dp"
+                                android:background="@null"
+                                android:hint="请输入你的密码"
+                                android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                                android:paddingLeft="10dp"
+                                android:password="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/enter_bnt1"
+                                android:layout_width="54dp"
+                                android:layout_height="36dp"
+                                android:background="@drawable/enter"
+                                android:gravity="center"
+                                android:soundEffectsEnabled="false"
+                                android:text="注册"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp" />
+
+                            <Button
+                                android:id="@+id/enter_bnt3"
+                                android:layout_width="54dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="100dp"
+                                android:background="@drawable/enter"
+                                android:gravity="center"
+                                android:padding="0dp"
+                                android:soundEffectsEnabled="false"
+                                android:text="登入"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/enter_iBnt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/enter_close"
+            android:soundEffectsEnabled="false" >
+        </ImageButton>
+
+        <RelativeLayout
+            android:id="@+id/enter_showDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dialog_background" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="加载数据中..."
+                    android:textColor="@android:color/white" />
+
+                <ProgressBar
+                    android:id="@+id/mainactivity_pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+                </ProgressBar>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

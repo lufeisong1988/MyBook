@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/share_ban"
+        android:padding="10dp" >
+
+        <ImageButton
+            android:id="@+id/sharenote_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/share_back"
+            android:soundEffectsEnabled="false" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/sharenote_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分享"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/sharenote_ensure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/share_ok"
+            android:soundEffectsEnabled="false" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/share_background"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/sharenote_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_book" >
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sharenote_tv2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textSize="20sp" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+# view res/layout/image_upload_pager.xml #generated:33
+# view res/layout/message_detail_footer.xml #generated:95
+# view res/layout/message_pub.xml #generated:150
+# view res/layout/reply_dialog.xml #generated:101
+# view res/layout/sns_friends.xml #generated:126
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class cn.sharesdk.framework.ShareSDKUIShell { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.starbaby.diyBook.clientapp.AppContext { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.starbaby.diyBook.clientui.FinishDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.starbaby.diyBook.clientui.FriendsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.starbaby.diyBook.clientui.ImageUploadPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.starbaby.diyBook.clientui.ImageViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:173
+-keep class com.starbaby.diyBook.clientui.Login { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class com.starbaby.diyBook.clientui.MessageDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.starbaby.diyBook.clientui.MessagePub { <init>(...); }
+
+# view AndroidManifest.xml #generated:237
+-keep class com.starbaby.diyBook.clientui.MessageType { <init>(...); }
+
+# view AndroidManifest.xml #generated:203
+-keep class com.starbaby.diyBook.clientui.MyFans { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.starbaby.diyBook.clientui.MyFollow { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.starbaby.diyBook.clientui.MyNotice { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.starbaby.diyBook.clientui.MyPost { <init>(...); }
+
+# view AndroidManifest.xml #generated:262
+-keep class com.starbaby.diyBook.clientui.ReplyDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class com.starbaby.diyBook.clientui.SelectMenu { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class com.starbaby.diyBook.clientui.SnsDelDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:191
+-keep class com.starbaby.diyBook.clientui.UserInfo { <init>(...); }
+
+# view res/layout/sns_timeline_item.xml #generated:43
+-keep class com.starbaby.diyBook.clientwidget.CollapsibleTextView { <init>(...); }
+
+# view res/layout/pager_img.xml #generated:10
+-keep class com.starbaby.diyBook.clientwidget.HackyViewPager { <init>(...); }
+
+# view res/layout/item_pager_image.xml #generated:7
+-keep class com.starbaby.diyBook.clientwidget.PhotoView { <init>(...); }
+
+# view res/layout/fans.xml #generated:21
+# view res/layout/follow.xml #generated:21
+# view res/layout/message_detail.xml #generated:9
+# view res/layout/my_post.xml #generated:57
+# view res/layout/my_post.xml #generated:61
+# view res/layout/my_post.xml #generated:66
+# view res/layout/my_reply.xml #generated:61
+# view res/layout/sns_friends.xml #generated:61
+# view res/layout/sns_friends.xml #generated:65
+# view res/layout/sns_friends.xml #generated:70
+# view res/layout/sns_friends.xml #generated:75
+-keep class com.starbaby.diyBook.clientwidget.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.starbaby.diyBook.controller.MusicService { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.starbaby.diyBook.main.BookSection { <init>(...); }
+
+# view AndroidManifest.xml #generated:254
+-keep class com.starbaby.diyBook.main.FansListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.starbaby.diyBook.main.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.starbaby.diyBook.main.MoreBook { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.starbaby.diyBook.main.MyBookshelf { <init>(...); }
+
+# view AndroidManifest.xml #generated:159
+-keep class com.starbaby.diyBook.main.MyCamera { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.starbaby.diyBook.main.RegisterAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class com.starbaby.diyBook.main.Share { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.starbaby.diyBook.main.UserEnter { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.starbaby.diyBook.main.UserInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.starbaby.diyBook.main.UserRegister { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class com.starbaby.diyBook.main.VistBook { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.starbaby.diyBook.main.WorkingShow { <init>(...); }
+
+# view AndroidManifest.xml #generated:153
+-keep class com.starbaby.diyBook.main.ZuoShuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class com.starbaby.diyBook.share.ShareNote { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:31
+-keep class com.starbaby.diyBook.view.ClearEditText { <init>(...); }
+
+# view res/layout/example_1.xml #generated:9
+# view res/layout/zuoshu_activity.xml #generated:13
+-keep class com.starbaby.diyBook.view.CreateCurlView { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.starbaby.diyBook.view.EnterActivityView { <init>(...); }
+
+# view res/layout/bookshelf.xml #generated:10
+# view res/layout/mainactivity.xml #generated:12
+# view res/layout/userinfo.xml #generated:9
+# view res/layout/workingshow.xml #generated:10
+-keep class com.starbaby.diyBook.view.EventLinearLayout { <init>(...); }
+
+# view res/layout/bookshelf.xml #generated:17
+# view res/layout/bookshelf_gridview1.xml #generated:1
+# view res/layout/bookshelf_gridview2.xml #generated:1
+# view res/layout/bookshelf_gridview3.xml #generated:1
+# view res/layout/bookshelf_gridview4.xml #generated:1
+# view res/layout/fragment_1.xml #generated:80
+# view res/layout/workingshow.xml #generated:16
+-keep class com.starbaby.diyBook.view.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:132
+-keep class com.starbaby.diyBook.view.ShowHead { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:64
+-keep class com.starbaby.diyBook.view.SideBar { <init>(...); }
+
+# view res/layout/userinfo.xml #generated:243
+# view res/layout/userinfo.xml #generated:253
+-keep class com.starbaby.diyBook.view.UserInfoBnt { <init>(...); }
+
+# view res/layout/vist_book.xml #generated:7
+-keep class com.starbaby.diyBook.view.VistCurlView { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.starbaby.diyBook.view.ZuoShuEdit { <init>(...); }
+
+# view res/layout/pop_inflate.xml #generated:78
+-keep class com.starbaby.diyBook.view.mSeekBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.starbaby.diyBook.wxapi.WXEntryActivity { <init>(...); }
+
+# onClick res/layout/mainactivity.xml #generated:144
+# onClick res/layout/userinfo.xml #generated:49
+# onClick res/layout/workingshow.xml #generated:55
+-keepclassmembers class * { *** false(...); }
+

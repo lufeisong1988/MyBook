@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout  android:id="@+id/message_pub_footer_linear"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/widget_bar_bg_n">	
+		 
+		<ImageView 
+			android:id="@+id/message_pub_footbar_photo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"			
+			android:layout_gravity="center"
+			android:paddingLeft="20dip"
+			android:paddingRight="20dip"
+			android:src="@drawable/widget_bar_photo"/>
+		
+		<ImageView
+			android:id="@+id/message_pub_footbar_face"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:layout_gravity="center"
+			android:paddingLeft="20dip"
+			android:src="@drawable/widget_bar_face"/>
+
+  
+		<ImageView 
+			android:id="@+id/tweet_pub_footbar_software"
+			style="@style/main_footbar_image" 
+			android:src="@drawable/widget_bar_soft"/>
+	</LinearLayout>
+	
+    <GridView 
+        android:id="@+id/message_pub_footbar_faces"
+        android:layout_below="@id/message_pub_footer_linear"
+        android:layout_width="fill_parent" 
+		android:layout_height="220dip"
+		android:numColumns="auto_fit"
+		android:columnWidth="50dip"
+		android:stretchMode="columnWidth"
+		android:gravity="center"
+		android:fadingEdge="none"
+		android:scrollingCache="false"
+		android:background="@color/face_bg"
+		android:visibility="gone"/>
+    -->
+
+</RelativeLayout>

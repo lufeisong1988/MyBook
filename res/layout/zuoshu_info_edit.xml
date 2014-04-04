@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideInset" >
+
+    <RelativeLayout
+        android:id="@+id/zuoshu_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/zuoshu_edit_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="还剩最后一步作品就完成啦！"
+                android:textColor="#ff0000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="作品名称:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@android:color/white"
+                        android:gravity="top"
+                        android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="作品介绍:"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_introduce"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@android:color/white"
+                        android:gravity="top"
+                        android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/zuoshu_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/save"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="提交"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/zuoshu_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/enter_close" >
+        </ImageButton>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在下载中..."
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/download_sb"
+            android:layout_width="100dp"
+            android:layout_height="20dp" >
+        </SeekBar>
+    </LinearLayout>
+
+</LinearLayout>

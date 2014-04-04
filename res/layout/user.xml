@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+	   	android:layout_width="match_parent"
+	   	android:layout_height="wrap_content"
+	   	android:paddingLeft="2dip"
+	   	android:paddingRight="2dip"
+	   	android:background="@drawable/head_bg_red">
+	   	<Button 
+	   		android:id="@+id/user_head_notice"
+		   	android:layout_width="wrap_content" 
+		   	android:layout_height="wrap_content" 
+		   	android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:text="消息"
+		    />
+ 
+		<LinearLayout 
+	 	    android:id="@+id/user_head_type_ll"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" 
+			android:layout_centerInParent="true">
+	      
+	     	<Button 
+	     		android:id="@+id/user_head_type_topic"
+	     		android:background="@drawable/personal_head_center_bg"
+	     		style="@style/main_head_menu_title"
+	         	android:text="@string/user_title_topic"/>
+	   
+	    </LinearLayout>
+	 
+		</RelativeLayout>
+	
+	   
+		<Button android:id="@+id/user_follow"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="关注"
+		    />
+		<Button android:id="@+id/user_fans"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="粉丝"
+		    />  
+</LinearLayout>

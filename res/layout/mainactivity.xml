@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainactivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mainActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.starbaby.diyBook.view.EventLinearLayout
+            android:id="@+id/main_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="65dp" >
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/comment_iBnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/comment" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_background2" >
+
+                <ImageButton
+                    android:id="@+id/MainmyshelftiBnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/info"
+                    android:soundEffectsEnabled="false" >
+                </ImageButton>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/infoiBnt"
+                    android:layout_toRightOf="@+id/MainmyshelftiBnt"
+                    android:background="#00000000" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:background="#00000000"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/Bnt1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/main_left"
+                            android:soundEffectsEnabled="false"
+                            android:text="绘本"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/Bnt2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/main_center"
+                            android:soundEffectsEnabled="false"
+                            android:text="益智"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/Bnt3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/main_center"
+                            android:soundEffectsEnabled="false"
+                            android:text="新书"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/Bnt4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/main_center"
+                            android:soundEffectsEnabled="false"
+                            android:text="幼教"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/Bnt5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/main_right"
+                            android:soundEffectsEnabled="false"
+                            android:text="更多"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" >
+                        </Button>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/infoiBnt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:soundEffectsEnabled="false" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/mainactivity_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/message_tip"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:onClick="false"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" >
+                </TextView>
+            </RelativeLayout>
+        </com.starbaby.diyBook.view.EventLinearLayout>
+
+        <FrameLayout
+            android:id="@+id/containers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/anim_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/anim_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/open_left"
+                android:scaleType="fitXY"
+                android:soundEffectsEnabled="false" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/anim_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/open_right"
+                android:scaleType="fitXY"
+                android:soundEffectsEnabled="false" >
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="加载数据中..."
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/mainactivity_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+            </ProgressBar>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

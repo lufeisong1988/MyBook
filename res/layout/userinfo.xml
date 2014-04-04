@@ -1,0 +1,318 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.starbaby.diyBook.view.EventLinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/user_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/userinfo_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/userinfo_background"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/userinfo_notice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/userinfo_title" >
+
+                    <ImageButton
+                        android:id="@+id/userinfo_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/share_back"
+                        android:soundEffectsEnabled="false"
+                        android:visibility="invisible" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/userinfo_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/userinfo_information"
+                        android:soundEffectsEnabled="false" >
+                    </ImageButton>
+					<TextView
+					    android:id="@+id/userinfo_msg"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/message_tip"
+					    android:text="1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:onClick="false"
+                        android:gravity="center"
+					    android:textColor="@android:color/black"
+					    android:visibility="invisible"
+					    android:textSize="10sp"></TextView>"
+                    <ImageButton
+                        android:id="@+id/userinfo_iBnt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/userinfo_book"
+                        android:soundEffectsEnabled="false" >
+                    </ImageButton>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/userinfo_bnt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/userinfo_left_in"
+                            android:soundEffectsEnabled="false"
+                            android:text="我的书柜"
+                            android:textSize=" 14sp " />
+
+                        <Button
+                            android:id="@+id/userinfo_theme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/userinfo_mid_off"
+                            android:soundEffectsEnabled="false"
+                            android:text="话题"
+                            android:textSize=" 14sp " />
+
+                        <Button
+                            android:id="@+id/userinfo_bnt8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/userinfo_right_off"
+                            android:soundEffectsEnabled="false"
+                            android:text="系统设置"
+                            android:textSize=" 14sp " />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/user_name"
+                                android:gravity="center"
+                                android:text="jugg"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+
+                            <ImageButton
+                                android:id="@+id/add_attention"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/add_attention"
+                                android:soundEffectsEnabled="false" >
+                            </ImageButton>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/userinfo_button_background"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="3" >
+
+                                <ImageView
+                                    android:id="@+id/userinfo_iv1"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:soundEffectsEnabled="false" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="2"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:id="@+id/attention"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/attention"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:soundEffectsEnabled="false" >
+
+                                        <TextView
+                                            android:id="@+id/attention_tv1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="10sp" >
+                                        </TextView>
+
+                                        <TextView
+                                            android:id="@+id/attention_tv2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="关注"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="10sp" >
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/fans"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/fans"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:soundEffectsEnabled="false" >
+
+                                        <TextView
+                                            android:id="@+id/fans_tv1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="10sp" >
+                                        </TextView>
+
+                                        <TextView
+                                            android:id="@+id/fans_tv2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="粉丝"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="10sp" >
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <com.starbaby.diyBook.view.UserInfoBnt
+                                    android:id="@+id/userinfo_bnt6"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/userinfo_choose_off"
+                                    android:soundEffectsEnabled="false" >
+                                </com.starbaby.diyBook.view.UserInfoBnt>
+
+                                <com.starbaby.diyBook.view.UserInfoBnt
+                                    android:id="@+id/userinfo_bnt2"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/userinfo_choose_off"
+                                    android:soundEffectsEnabled="false" >
+                                </com.starbaby.diyBook.view.UserInfoBnt>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/userinfo_contains"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:gravity="center" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.starbaby.diyBook.view.EventLinearLayout>
+
+        <FrameLayout
+            android:id="@+id/userinfo_containers"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userinfo_showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="加载数据中..."
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/mainactivity_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+            </ProgressBar>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

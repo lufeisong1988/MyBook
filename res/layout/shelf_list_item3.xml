@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_parents"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/work_left_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/work_shelf_image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/work_shelf_left"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/work_right_ll"
+        android:layout_toRightOf="@+id/work_left_ll" >
+
+        <LinearLayout
+            android:id="@+id/work_linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/work_shelf_center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/work_ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/work_button_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/work_ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/work_button_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/work_ll3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/work_button_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom" >
+
+                <LinearLayout
+                    android:id="@+id/work_ll4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/blank_book"
+                    android:gravity="center_horizontal|bottom" >
+
+                    <ImageView
+                        android:id="@+id/work_button_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:soundEffectsEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/work_right_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/work_shelf_image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/work_shelf_right"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+</RelativeLayout>

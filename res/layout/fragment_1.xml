@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/fragment1_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/userinfo_shelf_off"
+                android:soundEffectsEnabled="false"
+                android:text="我的作品"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/fragment1_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/userinfo_shelf_off"
+                android:soundEffectsEnabled="false"
+                android:text="已读书籍"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/fragment1_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/userinfo_shelf_off"
+                android:soundEffectsEnabled="false"
+                android:text="精选书籍"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/fragment1_bnt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fragemtn_1"
+                android:soundEffectsEnabled="false"
+                android:text="爱做书"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/fragment1_bnt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/userinfo_tips"
+                android:soundEffectsEnabled="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.starbaby.diyBook.view.PullToRefreshListView
+            android:id="@+id/fragment_lv1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/userinfo_book_shape" />
+    </RelativeLayout>
+
+</LinearLayout>

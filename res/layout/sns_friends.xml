@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+  	android:orientation="vertical"
+  	android:background="@color/bg"
+  	 >
+
+	<RelativeLayout 
+	   	android:layout_width="match_parent"
+	   	android:layout_height="wrap_content"
+	   	android:paddingLeft="2dip"
+	   	android:paddingRight="2dip"
+	   	android:background="@drawable/head_bg">
+	   	<ImageView 
+	   		android:id="@+id/sns_friends_back"
+		   	android:layout_width="wrap_content" 
+		   	android:layout_height="wrap_content" 
+		   	android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+		   	android:background="@drawable/head_back"/>
+	    <ImageView android:id="@+id/sns_freinds_pub"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="10dp"
+			android:layout_alignParentRight="true"
+		    android:background="@drawable/camera"/>  
+		<LinearLayout 
+	 	    android:id="@+id/sns_friends_head_type_ll"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" 
+			android:layout_centerInParent="true">
+	     	<Button 
+	     		android:id="@+id/sns_friends_head_type_all"
+	     		android:background="@drawable/message_type_left_bg"
+	     		style="@style/main_head_menu_title"
+	     		android:enabled="false"
+	         	android:text="@string/post_type_martket"/>
+	     	
+	     	<Button 
+	     		android:id="@+id/sns_friends_head_type_chat"
+	     		android:background="@drawable/message_type_center_bg"
+	     		style="@style/main_head_menu_title"
+	         	android:text="@string/post_type_chat"/>
+	     	<Button
+	     	    android:id="@+id/sns_friends_head_type_diary"
+	     	    android:background="@drawable/message_type_center_right_bg"
+	     	    style="@style/main_head_menu_title"
+	     	    android:text="@string/post_type_diary"/>
+	
+	        <Button 
+	     		android:id="@+id/sns_friends_head_type_moment"
+	     		android:background="@drawable/message_type_right_bg"
+	     		style="@style/main_head_menu_title"
+	         	android:text="@string/post_type_moment"/>
+	    </LinearLayout>
+	</RelativeLayout>
+	
+ 	<com.starbaby.diyBook.clientwidget.PullToRefreshListView
+		  	android:id="@+id/sns_friends_all_listview"
+		    style="@style/widget_listview"/>
+ 	
+ 	<com.starbaby.diyBook.clientwidget.PullToRefreshListView
+		  	android:id="@+id/sns_friends_chat_listview"
+		  	android:visibility="gone"
+		    style="@style/widget_listview"/>
+ 	
+ 	<com.starbaby.diyBook.clientwidget.PullToRefreshListView
+		  	android:id="@+id/sns_friends_diary_listview"
+		  	android:visibility="gone"
+		    style="@style/widget_listview"/>
+ 	
+ 	<com.starbaby.diyBook.clientwidget.PullToRefreshListView
+		  	android:id="@+id/sns_friends_moment_listview"
+		  	android:visibility="gone"
+		    style="@style/widget_listview"/>
+ 	<LinearLayout
+ 	    	android:id="@+id/sns_freind_footer"
+			android:orientation="vertical" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:padding="5dip"
+			android:visibility="gone"
+			android:background="@drawable/widget_bar_bg_n">
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+			<ImageView android:id="@+id/sns_freind_footer_face"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:layout_marginRight="5dip"
+			    android:src="@drawable/widget_bar_face"/>
+			<EditText
+		        android:id="@+id/sns_freind_footer_editer"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		         android:layout_gravity="center"
+		        android:focusable="true" 
+		        android:focusableInTouchMode="true"
+		        android:maxLines="1"
+		        android:singleLine="true"
+		        android:maxLength="150" 
+		        android:background="@drawable/reply_edittext_bg"
+		        android:imeOptions="flagNoExtractUi"  
+		       />			
+		   	<ImageView 
+		   		android:id="@+id/sns_freind_footer_pubcomment"
+			   	android:layout_width="45dip" 
+		      	android:layout_height="34dip" 
+		      	android:layout_marginLeft="5dip"
+		      	 android:layout_gravity="center"
+		      	android:background="@drawable/message_send_btn"
+		      	android:textColor="@color/black"
+		      />
+		   	</LinearLayout>
+		   	<RelativeLayout
+		        android:id="@+id/ll_facechoose"
+		        android:layout_width="fill_parent"
+		        android:layout_height="124dip"
+		        android:background="#f6f5f5"
+		        android:visibility="gone" >
+
+	        <android.support.v4.view.ViewPager
+	            android:id="@+id/vp_contains"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" >
+	        </android.support.v4.view.ViewPager>
+	
+	        <LinearLayout
+	            android:id="@+id/iv_image"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="6dip"
+	            android:gravity="center"
+	            android:orientation="horizontal" >
+	        </LinearLayout>
+    	</RelativeLayout>
+		</LinearLayout>
+</LinearLayout>

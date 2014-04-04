@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="486dp"
+        android:layout_height="230dp"
+        android:background="@drawable/fragment_1_show_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/warn_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:text="提示信息"
+                android:textColor="#ff00bfff"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/warn_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:text="     您当前系统版本过低，"
+                android:textColor="#ff00bfff"
+                android:textSize="13sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/warn_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="120dp"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:text="需要升级到更高版本（android3.0以上）才能浏览 ！"
+                android:textColor="#ff00bfff"
+                android:textSize="13sp" >
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/warn_bnt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/exit"
+            android:soundEffectsEnabled="false" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

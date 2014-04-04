@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal">
+	<ViewSwitcher
+    	android:id="@+id/message_detail_foot_viewswitcher" 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    
+  		<LinearLayout
+			android:orientation="horizontal" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/bottom_bg">
+			 <!-- <LinearLayout android:id="@+id/message_detail_footbar_store" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+	            <ImageView  android:background="@drawable/widget_bar_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+	            <TextView android:textSize="12.0sp" android:textColor="#ff4c5467" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏" />
+	        </LinearLayout> -->
+			<ImageView
+				android:id="@+id/message_detail_footbar_editebox"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginLeft="17.0dip" 
+				android:layout_marginRight="4dip"
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/xiang_icon_06"
+			/>
+		</LinearLayout>
+    	<LinearLayout
+			android:orientation="vertical" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:background="@drawable/widget_bar_bg_n">
+				<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="5dip">
+			<!-- 		<ImageView android:id="@+id/message_detail_foot_at"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginRight="5dip"
+					    android:background="@drawable/widget_bar_at"/> -->
+					<ImageView android:id="@+id/message_detail_foot_face"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginRight="5dip"
+					    android:layout_gravity="center_vertical"
+					    android:src="@drawable/widget_bar_face"/>
+					<EditText
+				        android:id="@+id/message_detail_foot_editer"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:focusable="true" 
+				        android:focusableInTouchMode="true"
+				        android:layout_gravity="center_vertical"
+				        android:maxLines="4"
+				        android:maxLength="150" 
+				        android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+				        android:background="@drawable/reply_edittext_bg"
+				       />			
+				   	<ImageView 
+				   		android:id="@+id/message_detail_foot_pubcomment"
+					   	android:layout_width="45dip" 
+				      	android:layout_height="34dip" 
+				      	android:layout_marginLeft="5dip"
+				      	android:layout_gravity="center_vertical"
+				      	android:background="@drawable/message_send_btn"
+				      	android:textColor="@color/black"
+				      />
+			   	</LinearLayout>
+			   	<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="50dip" android:id="@+id/message_detail_layout_bottom"
+						android:background="@drawable/mic_bg" android:orientation="horizontal"
+						android:gravity="center_vertical" android:visibility="gone">
+						<ImageView android:id="@+id/message_detail_foot_at"
+							android:layout_width="80dip" android:layout_height="fill_parent"
+							android:src="@drawable/widget_bar_at" android:background="@drawable/mic_bottom_bg"
+							android:clickable="true" android:scaleType="center" />
+						<ImageView android:id="@+id/message_detail_foot_voice"
+						    android:layout_width="80dip"
+							android:layout_height="fill_parent" android:scaleType="center"
+							android:layout_marginLeft="60dip"
+							android:background="@drawable/mic_bottom_bg" android:src="@drawable/speak"
+							android:clickable="true" />
+				</LinearLayout>
+			   	<RelativeLayout
+			        android:id="@+id/ll_facechoose"
+			        android:layout_width="fill_parent"
+			        android:layout_height="124dip"
+			        android:background="#f6f5f5"
+			        android:visibility="gone" >
+	
+		        <android.support.v4.view.ViewPager
+		            android:id="@+id/vp_contains"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" >
+		        </android.support.v4.view.ViewPager>
+		
+		        <LinearLayout
+		            android:id="@+id/iv_image"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="6dip"
+		            android:gravity="center"
+		            android:orientation="horizontal" >
+		        </LinearLayout>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+	    	</RelativeLayout>
+		</LinearLayout>
+	</ViewSwitcher>
+</LinearLayout>

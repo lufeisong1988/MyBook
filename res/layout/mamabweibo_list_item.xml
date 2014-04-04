@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weibo_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comment_bg2"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/message_detail_listitem_userface"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="7.0dip"
+        android:background="@drawable/face_loading"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:id="@+id/weibo_post_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@id/message_detail_listitem_userface" >
+
+        <TextView
+            android:id="@+id/message_detail_listitem_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:paddingLeft="5.0dip"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#ff252525" />
+
+        <RelativeLayout
+            android:id="@+id/layout_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_detail_listitem_username"
+            android:orientation="horizontal"
+            android:paddingLeft="5.0dip" >
+
+            <!-- <TextView android:textSize="12.0sp" android:textColor="#ffbcbcbc" android:id="@id/babytime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5个月前" android:layout_alignParentLeft="true" /> -->
+
+            <TextView
+                android:id="@+id/message_detail_listitem_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5.0dip"
+                android:textColor="#ffbcbcbc"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+        <!--
+             <RelativeLayout android:id="@id/share_pic_layout" android:paddingLeft="5.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/layout_time">
+            <include layout="@layout/share_pic_pl_new" />
+        </RelativeLayout>
+        -->
+    </RelativeLayout>
+
+</RelativeLayout>

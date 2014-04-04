@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/message_pub_img_0"
+        android:layout_width="63.0dip"
+        android:layout_height="63.0dip"
+        android:layout_margin="3.0dip"
+        android:maxHeight="350.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/smiley_add_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/message_pub_img_1"
+        android:layout_width="63.0dip"
+        android:layout_height="63.0dip"
+        android:layout_margin="3.0dip"
+        android:maxHeight="350.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/smiley_add_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/message_pub_img_2"
+        android:layout_width="63.0dip"
+        android:layout_height="63.0dip"
+        android:layout_margin="3.0dip"
+        android:maxHeight="350.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/smiley_add_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/message_pub_img_3"
+        android:layout_width="63.0dip"
+        android:layout_height="63.0dip"
+        android:layout_margin="3.0dip"
+        android:maxHeight="350.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/smiley_add_btn"
+        android:visibility="gone" />
+
+</LinearLayout>
